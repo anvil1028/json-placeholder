@@ -1,0 +1,129 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  border: 1px solid red;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 15px;
+  display: flex;
+}
+
+.title {
+  font-size: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.loading {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.postContainer {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.postList {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.scroll {
+  overflow: auto;
+}
+.scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.8);
+}
+.scroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.postListItem {
+  border-radius: 10px;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+}
+
+.postListItem:hover {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.selected:hover {
+  color: black;
+}
+
+.detailContainer {
+  padding: 15px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.detailBody {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+}
+
+.detailBody .title {
+  margin-bottom: 20px;
+}
+
+.detailComments {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailComments .scroll {
+  margin-top: 5px;
+}
+
+.commentsItem {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.commentWriter {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+}
+
+.commentBody {
+  display: flex;
+  margin-top: 10px;
+}
